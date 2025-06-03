@@ -1,22 +1,12 @@
-import _ from 'lodash';
+const car = dataRows.map(dataRows => dataRows.marka);
 
+const modelCar = dataRows.map(dataRows => dataRows.model);
 
-export default content => {
-const rows = content.split('\n');
-const dataRows = rows.slice(1).filter(row => row.trim() !== '').map(row => {
-    const [marka, model, year, kuzov, probeg, korobka, toplivo, cost, color] = row.split(',');
-    return {marka, model, year, kuzov, probeg, korobka, toplivo, cost, color};
-});
+const years = dataRows.map(dataRows => dataRows.year);
 
-// 1 шаг
-const count = dataRows.length;
+const oldYear = Math.min(...years);
 
-console.log(`Количество автомобилей: ${count}`);
-
-// 2 шаг
-
-const avgProbeg = [...new Set()]
-
+const oldCar = 
 
 
 
